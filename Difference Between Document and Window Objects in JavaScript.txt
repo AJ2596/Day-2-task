@@ -1,0 +1,110 @@
+Difference Between Document and Window Objects in JavaScript
+
+
+
+*The Document Object
+
+
+
+1. Scope:
+
+The Document object represents the HTML document loaded in the current browser window. 
+It is limited to the scope of the specific web page.
+
+2. Access to HTML Elements: 
+
+Document provides methods like getElementById(), getElementsByClassName(), 
+and getElementsByTagName() to access and manipulate HTML elements within the page.
+
+3. DOM Manipulation: 
+
+Developers use the Document object to modify the structure and content of a web page dynamically. 
+This includes creating, deleting, or modifying HTML elements and their attributes.
+
+4. Events Handling: 
+
+Event listeners can be attached to elements using the Document object. This allows developers to respond to user interactions, 
+such as clicks or key presses, within the web page.
+
+5. Document Object Model (DOM): 
+
+The Document object is a critical component of the Document Object Model (DOM), 
+which represents the hierarchical structure of HTML elements on a web page.
+
+6. Limited Global Scope: 
+
+The Document object does not have access to global variables or functions defined in other scripts or windows. 
+It operates within the context of the current page.
+
+7. Content Retrieval: 
+
+Document facilitates the retrieval of information from the page, 
+including text content, element attributes, and form input values.
+
+8. Styling: 
+
+Developers can use the Document object to modify the styling of elements by changing their CSS properties and classes.
+
+9. Form Handling: 
+
+It allows you to interact with forms on the page, including form submission, validation, and manipulation of form elements.
+
+10. Selective Element Access: 
+
+Document enables developers to select and interact with specific elements on the page based on various criteria, such as IDs, classes, or element types.
+
+
+
+
+
+*Window Object:
+
+
+
+
+1. Global Scope: 
+
+The Window object is global and accessible throughout a web page. 
+It serves as the global context for JavaScript code running within that page.
+
+2. Browser Controls: 
+
+Window provides methods for controlling the browser, including opening new windows or tabs, 
+navigating to different URLs, resizing the window, and closing the current window.
+
+3. Timers and Intervals: 
+
+JavaScript timers and intervals, implemented through functions like setTimeout() and setInterval(), 
+are part of the Window object. They allow for delayed execution of code.
+
+4. Storage and Cookies: 
+
+Window provides access to browser storage mechanisms such as localStorage and sessionStorage, 
+as well as cookies. These features enable data storage and retrieval on the client-side.
+
+5. Window Events: 
+
+The Window object handles global events that are not tied to specific elements, 
+such as the window.onload event, which fires when the entire page finishes loading.
+
+6. Global Variables: 
+
+Variables and functions defined in the global scope become properties and methods of the Window object, 
+making them accessible throughout the page.
+
+7. Location Information: 
+
+Window provides information about the current URL and allows you to modify it, facilitating page navigation.
+
+8. Parent and Child Windows: 
+
+When working with frames or iframes, the Window object provides access to parent and child window contexts.
+
+9. History Management: 
+
+It offers methods to navigate backward and forward through the user's browsing history.
+
+10. Cross-Origin Communication: 
+
+Window objects of different windows or tabs in the same browser allow limited communication through mechanisms like window.postMessage(), 
+enabling interaction between separate pages or domains.
